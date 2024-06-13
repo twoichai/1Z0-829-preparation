@@ -32,6 +32,7 @@ Example
     }
 
 > void - no value at all returned
+> smart to use when just changing the state of the object
 ---
 ### Classes and Source Files
 **Top Level class** is often public --> any code can call it
@@ -71,3 +72,35 @@ other things:
 `static`: bind a method to its class so it can be called by just the class name --> no object creation needed
 
 ---
+### Understanding Package Declarations and Imports
+
+HINT:
+
+    public static void main(String[] args) { 
+    	Random r = new Random();
+    	System.out.println(r.nextInt(10)); 
+   	}
+Prints numbers from 0-9
+
+- Package names are hierarchical
+- including many imports does not slows down the execution of program
+- **java.lang is automatically imported**
+- packages allow to have classes with same names
+
+Some typical errors:
+
+    import java.nio.*; // NO GOOD - a wildcard only matches // class names, not "file.Files" 
+    import java.nio.*.*; // NO GOOD - you can only have one wildcard // and it must be at the end 
+    import java.nio.file.Paths.*; // NO GOOD - you cannot import methods // only class names
+### What happens if you need to use two classes with the same name?
+
+    public class Conflicts { 
+	    java.util.Date date; 
+	    java.sql.Date sqlDate; 
+    }
+### Hierarchy in Java Class
+- P - Package
+- I - Imports
+- C - Class
+---
+### Creating Objects
