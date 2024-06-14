@@ -104,3 +104,94 @@ Some typical errors:
 - C - Class
 ---
 ### Creating Objects
+to create an instance of a class `new` is needed:
+
+    Park p = new Park();
+1. Declare the type `Park`
+2. Give a variable for storage `p`
+3. `Park()` is the constructor which creates a new object
+
+**Custom constructor:**
+
+    public class Chick { 
+	    public Chick() { 
+		    System.out.println("in constructor"); 
+	    } 
+    }
+**HINT:**
+- there is no return type, but `void` is not good
+- constructor is named after the class
+- purpose of constructor : initialize fields
+
+**Example:**
+
+    public class Chicken { 
+	    int numEggs = 12; 
+	    String name;
+	    public Chicken() { 
+		    name = "Duke"; // initialize in constructor 
+	    } 
+    }
+---
+### Member and Writing Member Fields
+
+    public class Swan { 
+	    int numberEggs; // instance variable 
+	    public static void main(String[] args) { 
+		    Swan mother = new Swan(); 
+		    mother.numberEggs = 1; // set variable 
+		    System.out.println(mother.numberEggs); // read variable 
+    	} 
+    }
+
+---
+- Fields and instance initialize blocks are run in the order in which they appear in the file
+- Constructor runs after all fields and instance initializer blocks have run
+
+---
+### Understanding the Data Types
+#### Primitives:
+
+- int values without decimal points: `byte, short, int, long` 
+- `float` & `long` requires L/F at the end of the number: `123L, 123.45f`
+- what is the size of `boolean`? depends on the JVM
+
+#### Difference between `short` and `char`:
+`short` is *signed*, `char` is *unsigned*
+**means**: 
+`short`: range of short is **-infinity** to **+infinity**
+`char`: **0** and **+values**
+#### Writing Literals:
+numbers are present in code called *literals*
+if don't add `L` 
+
+    double notAtStart = _1000.00; // DOES NOT COMPILE 
+    double notAtEnd = 1000.00_; // DOES NOT COMPILE 
+    double notByDecimal = 1000_.00; // DOES NOT COMPILE 
+    double annoyingButLegal = 1_00_0.0_0; // Ugly, but compiles 
+    double reallyUgly = 1_______2; // Also compiles
+---
+### Reference Types
+Each primitive type has a wrapper class, which corresponds to the primitive
+It is an option to convert 
+
+    int primitive = Integer.parseInt("123);
+    Integer wrapper = Integer.valueOf("123");
+1. converts a String to an int primitive
+2. converts a String to an Integer wrapper class
+
+we also can return different number types with methods from `Number` class:
+
+    Double apple = Double.valueOf("200.99");
+    System.out.println(apple.byteValue()); // -56 
+    System.out.println(apple.intValue()); // 200 
+    System.out.println(apple.doubleValue()); // 200.99
+`Integer` also has additional methods:
+
+`max(int num1, int num2)` returns the largest of the two numbers
+`min(int num1, int num2)` returns the smallest of the two numbers
+`sum(int num1, int num2)` adds the two numbers
+
+---
+### Defining Text Blocks
+
