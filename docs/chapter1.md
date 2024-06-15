@@ -235,4 +235,26 @@ Examples of ilegal identifiers:
 - should be used localy --> inside a method
 - it should be initialized else it will not compile
 - methods params can't be vars 
+
+**Scope of Variables**
+- `Local variables`: in scope from declaration to the end of the block
+- `Method parameters`: in scope for the duration of the method
+- `instance variables`: in scope from declaration till object is eligible for garbage collection
+- class variables: in scope till the program ends
+
 ---
+### Garbage Collection
+process of automatically freeing memory on the heap by deleting objects that are no longer reachable in your program
+ 
+
+    System.gc();
+    
+In Java, there are no guarantees about when garbage collection will run. The JVM is free to ignore calls to System.gc()
+
+---
+### Summary
+- Java begins program execution with a `main()` method
+- Java code is organized into packages, `import` statement is used to reference classes in other packages
+- Primitive types are the basic building blocks of Java
+- Primitive types assemble into reference types
+- 
