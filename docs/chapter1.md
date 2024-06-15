@@ -1,11 +1,11 @@
 # Chapter 1: Building Blocks
 **Topics:**
 - Handling date, time, text, numeric and boolean values
---primitives and wrapper classes
+- primitives and wrapper classes
 - OOP
---nected class objects
---life-cycle
---garbage collection
+- nested class objects
+- life-cycle
+- garbage collection
 ---
 ### Components of Java
 JDK:
