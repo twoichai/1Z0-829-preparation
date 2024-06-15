@@ -194,4 +194,45 @@ we also can return different number types with methods from `Number` class:
 
 ---
 ### Defining Text Blocks
+**Escape characters:**
+`\"` --> "
+`\n` --> new line
+### Declaring Variables
+variable is a name for a piece of memory that stores data --> initializing a variable
 
+    String zooName = "Best Zoo";
+
+- it's not allowed to name identifiers with reserved words
+- single underscore is not allowed
+- identifier can't start with a number
+- identifiers must begin with a letter, currency symbol or a `_` symbol
+
+Examples of ilegal identifiers:
+
+    int 3DPointClass; // identifiers cannot begin with a number byte hollywood@vine; // @ is not a letter, digit, $ or _ 
+    String *$coffee; // * is not a letter, digit, $ or _ 
+    double public; // public is a reserved word 
+    short _;
+### Declaring Multiple Variables
+
+    void sandFence() { 
+	    String s1, s2; 
+	    String s3 = "yes", s4 = "no"; 
+    }
+***declared*** means that memory was allocated
+***initialized*** means that a variable got a value
+`int num, String value;` will not compile because of different types
+
+### Final Local Variables
+`final` is applied to local variables
+
+    final int y = 10;
+    int x = 20;
+    y = x +10; // INVALID since final can't be modified
+- local variables have no default value --> need to be initialized before use
+---
+### Var
+- should be used localy --> inside a method
+- it should be initialized else it will not compile
+- methods params can't be vars 
+---
