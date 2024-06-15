@@ -1,1 +1,32 @@
+1. **Which of following are legal entry point methods that can be run from command line?**
+A. private static void main(String[] args) 
+B. public static final main(String[] args) 
+C. public void main(String[] args) 
+D. public static final void main(String[] args) 
+E. public static void main(String[] args) 
+F. public static main(String[] args)
+**Answer:** `E`- og main method, `D` - although final is redundant
+others are incorect because they are not public, or miss `void` or `static`
 
+2. **Answer:** `C` - because of PIC, `D,E` because import of java util and the package is optional
+3. **Answer:** `A,E`
+4. **Answer:** `B,E,G`
+5. **Answer:** `NO IDEA ABOUT GARBAGE COLLECTOR`
+6. **Answer:** `F`
+7. **Answer:** `C,E`
+8. **Answer** `B,D,E,G,H`
+9. **Answer**  `E`
+10. **Answer:** `A,E,F` 
+11. **Answer:** `E`- because the classes are in the same package
+12. **Answer:** `A,C,D`
+13. **Answer** `A,B,C`
+14. **Answer:** `A,B,D,E`
+15. **Answer:** `C,E,F`
+16. **Answer:** `A,D`
+17. **Answer:** `D,F,G`
+18. **Answer:** `C,E,F`
+19. **Answer:** `A,E`
+20. **Answer:** `C`
+21. **Answer:** `D`
+22. **Answer:** `C,F,G`
+23. **Answer:** `A,D`
